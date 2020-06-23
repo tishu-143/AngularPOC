@@ -1,0 +1,21 @@
+<p>Welcome {{name}}</p>
+<h2>{{"Welcome " + name}}</h2>
+<h2>{{"The length of your name is " + name.length}}</h2>
+<h2>{{"Your name in upper case is " + name.toUpperCase()}}</h2>
+<h2>{{"Here i call a method to greet you " + greetUser() }}</h2>
+<h2>{{"Here below is an example of property binding"}}</h2>
+<input [id] = "myid" type = "text" value = "sample" />
+<h2>Here below is the example of not property binding</h2>
+<input disabled = "false" [id] = "myid" type = "text" value = "sample" />
+<p>Here, the disabled property is set to false but the input is still disabled. See in the inspect source</p>
+<h2 class = "test">Here is the exmple of proper property binding</h2>
+<input [disabled] = "isdisabled" [id] = "myid" type = "text" value = "sample" />
+
+<input [(ngModel)] = "myname" type = 'text'>{{myname}}
+
+<div [ngSwitch] = "color">
+<h2 *ngSwitchCase = "'red'"> You picked red</h2>
+<h2 *ngSwitchCase = "'blue'">You picked blue</h2>
+<h2 *ngSwitchCase = "'green'">You picked green</h2>
+<h2 *ngSwitchDefault > You didnot choose any color</h2>
+</div>
